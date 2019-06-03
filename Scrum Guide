@@ -1,0 +1,50 @@
+Scrum: A framework for developing, delevering and sustainging complex products.
+Definition of scrum: A frammework in which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.
+Scrum is: >lightweight
+        > simple to use
+        > diffucult to master
+
+Scrum has been used to:
+    1. Research and identify viable markets, technologies, and product capabilities;
+    2. Develop products and enhancements;
+    3. Release products and enhancements, as frequently as many times per day;
+    4. Develop and sustain Cloud (online, secure, on-demand) and other operational
+    environments for product use; and,
+    5. Sustain and renew products
+
+The Scrum Theory: knowledge comes from experience and making decisions based on what is know, scrum employs an iterative, incremental approach to optimize predictability and control risk
+Scrum can be defined by 3 pillars: transparency, inspection and adaptation
+Transparency: everyone shares a common understanding of the definition of done, 
+    a common langauge refering to the process must be shared by all participants 
+Inspection: Inspect scrum artifacts and progress toward a sprint goal to detect undesirable variances
+    inspectors shouldn't get in the way of the work but be beneficial when performed by skilled inspectors.
+Adaptation: adjustments are made to minimize further deviation. There are 4 formal events for inspection adn adaptation: Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective
+
+The Scrum Team is made up by Product Owner, Development Team and Scrum master
+    Product Owner: responsible for maximizing the value of the product results from the dev team. They are also in charge of the product backlog management.
+            Backlog managment: Clearly expressing Product Backlog items;
+                            • Ordering the items in the Product Backlog to best achieve goals and missions;
+                            • Optimizing the value of the work the Development Team performs;
+                            • Ensuring that the Product Backlog is visible, transparent, and clear to all, and shows what the Scrum Team will work on next; and,
+                            • Ensuring the Development Team understands items in the Product Backlog to the level needed
+                   The product owner is accountable for all this but doesnt have to do it all by themself
+
+    Dev. Team: responsible for the increment of "done" product, only members of the dev team create the increment
+        They have the following characteristics: They are self-organizing. No one (not even the Scrum Master) tells the Development Team how to turn Product Backlog into Increments of potentially releasable functionality;
+        • Development Teams are cross-functional, with all the skills as a team necessary to create a product Increment;
+        • Scrum recognizes no titles for Development Team members, regardless of the work being performed by the person;
+        • Scrum recognizes no sub-teams in the Development Team, regardless of domains that need to be addressed like testing, architecture, operations, or business analysis; and,
+        • Individual Development Team members may have specialized skills and areas of focus, but accountability belongs to the Development Team as a whole
+
+    Scrum Master: responsible for promoting and supporting scrum, they help everyone understand scrum theory, practices, rules, and values. They are the leader of the team and helps those outside the team understand their interactions with the scrum team.
+                  
+Sprint: They are timely events/meetings that cannot be extened or shortened and are used for a "done" increment of a duration of the project.
+        They consist of sprint planning, daily scrums, the dev team, work, the sprint review, and the sprint retrospective.
+        During the sprint, no changes are made that would endanger the sprint goal, quality goals do not decrease, and scopde may be clarified and re-negotiated between the product owner
+        and dev team.
+ONLY THE PRODUCT OWNER CAN CANCEL A SPRINT 
+
+Sprint Planning: is timed boxed to maximum of eight hours for a one month sprint, it answers the following: what can be delivered in the increment resulting from the upcoming sprint?
+                How will the work needed to deliver the increment be achived?
+
+
