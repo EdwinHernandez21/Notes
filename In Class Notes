@@ -33,4 +33,43 @@ What's the problem: - Mariner 1, a 500 mil space craft was lost in space before 
     - stuxnet is a computer worm discovered in june 2010 that is belived to have been created by the United States and Israeli agenncies to attack Iran's nuclear facilities. Stuxnet initially spreads via microsoft windows, and targets Siemens industrial control systems
     - 
 
+******************************************************************************************************************************
+                                            June 6th Notes
+
+DIA:    - 88 airport gates in 3 concourses
+    - 17 miles of tracks and 5 miles of conveyyor belts
+    - they just hvae a lot of things being a huge airport
+    - All this stuff and thye are 16 months past its hard deadline
+    - its costing the city 560 million over budget
+    - the automative convairebelt is so bad they took it out and are using physical carts for luggage and its costing them a lot of money
+    - turns out the software is very bad its terrible 
+    
+Chaos 1995: - 31% of projects will be canceled before they ever get completed, mostly software projects
+    - american companies and government agencis will spend 81 million on software projects
+    - The average is only 16.2% for software projects that are completed on-time and on-budget 
+    - In the larger companies, the news is even worse: only 9% of their projects come in on-time and on budget 
+    - Projects completed by the largest american compaines have only approximately 42% of the originally-proposedfeatures and functions
+    - Smaller compies tend to do a lot better than major larger companies
+No Silver Bullet:
+    - There is no single development, in either technology or management technique, which by itself promises even one order of magnitude improvement within a decade in productivity, in reliability, in symphathy 
+    - We dont need to create a new calculator, or a new tic tiok game, we need to create new things, all the easy stuff is already done
+Engineering:
+    - software engineering is the study and an application of engineering to the design, development, and maintenance of software
+Margaret Hamilton:
+    - She helped a lot in the involvement in apollo 11, she did exclusive testing which lead to a succesfull launch of apollo 11
+Terminology: 
+    - statements that define and quantify what the program needs todo
+    - the work requirments isn't used in the same way as elsewhere
+    - Software rewuirments tend to be negotiable
+Functional requirments: 
+    - what a program needs to do 
+    - tends to be yes or no
+Non-Functional requirments: 
+    - The manner in which the functional requirements needs to be achived 
+    - Performance, usability, maintainability 
+    - Tend to be on a scale (htting the right code coverage)
+Design contraints: 
+    - statements the constrain the ways in which the software can be designed and implemented
+    - Platform, language, DB, Webapp, GUI, etc. 
+
     
