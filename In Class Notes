@@ -33,7 +33,7 @@ What's the problem: - Mariner 1, a 500 mil space craft was lost in space before 
     - stuxnet is a computer worm discovered in june 2010 that is belived to have been created by the United States and Israeli agenncies to attack Iran's nuclear facilities. Stuxnet initially spreads via microsoft windows, and targets Siemens industrial control systems
     - 
 
-******************************************************************************************************************************
+*************************************************************************************************************************************************
                                             June 6th Notes
 
 DIA:    - 88 airport gates in 3 concourses
@@ -72,4 +72,59 @@ Design contraints:
     - statements the constrain the ways in which the software can be designed and implemented
     - Platform, language, DB, Webapp, GUI, etc. 
 
-    
+***********************************************************************************************************************************************
+June 10th
+Local respository (repo):
+    - Local Git comandes:
+        - git init: initializes local repository, In command pallet: Git init
+        - git branch: create a new branch/version or copy, command pallet: Git branch/
+        - git add: add a file/change to the staging area, Command pallet: Git add/ stage
+        - git commit: commit changes (from stages) "commit message what the change is"
+        - git merge: merge a branch into a target branch, CP: Git merge
+        - git checkout: switch to a branch, CP: Git checkout
+    - These are local git commands where no internet is needed to use
+    - if I want to add a branch from my offline repo into the online/group repo than you would have to change into develope option and then merge the offline branch into the online branch
+
+Git Hub:
+    - git hub is a server that host copy of your repositories, it is just used to get remote repositories,
+    - branch protection: don't push into master you should pull and push request into the master branch
+    - pull request is the same as merge that is only avalible on git hub, when you do a pull request you need to include what it is/*name of branch* --what it is
+    - it will not let you merge until a review is met and tests are passed, this is for group and reviews are done by our LAs
+    - Push: send your updated branch into your online repo, Pull: takes whats ever in your online repo and brings it to your local repo
+    - A pull request is only a git hub feature only
+    - Work Flow: don't push to master, first you should push to feature branch and then to dev branch, master branch is the last branch that should be pushed to
+    - To go into master it need to pass travis and sonar with at least 95%, has to meet the definition of done, and it has to RUN!!
+
+Graphs:
+    - How to use graphs:- networks/network topologies
+                        - advance math
+                        - functional programming
+                        - machine learning - neural networks
+                        - graph databases
+Trypes of graphs: -Weighted and unweighted graphs:
+                            - weighted, edges have 
+
+    - directed and undirected graphes: - directed, you can only move along an edge in one direction
+                                        - undirected, you can move along an edge in both directions
+typical Graph functions: - add/remove vertex
+                        - add/remove edge
+                        - weighted?
+                        - directed?
+                        - Is conected? Given and vertex, can you get to any other vertex through legal edge movement
+                        - can every vertex reach  every othe rvertex through a single edge traversal
+                        - Does a path exists?
+                            - does at least one path exist, find the shortest path from one vertex tot he other
+                            - if a path between two vertices exist, find the shortest path from one vertex to the other
+How we represent graphs: - List of linked lists
+                        - each vertex is the head of a linked list (or a list, array , etc)
+                            - the linked list holds their edges (and weights, if they exist)
+                        - Matrix of vertices:
+                            - row and column titles are the vertices
+                            - row-column indices are edge weights (or edge existance)
+                        - List vs matrix: - List: more common, usually easier to visialize/conceptualize, adding edges is slow, many algorithms are slow or very individualized
+                            - Matrix: most algorithms are extremely fast in comparison, searches and traversals very mathematical, adding vertices is slow
+                        - Library: - nextwork X (http//networkx.github.io/)
+                            - graphs, digraphs, multigraphs
+                            - well tested (>90% coverage)
+                            - very 00 compliant
+
