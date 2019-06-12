@@ -33,7 +33,7 @@ What's the problem: - Mariner 1, a 500 mil space craft was lost in space before 
     - stuxnet is a computer worm discovered in june 2010 that is belived to have been created by the United States and Israeli agenncies to attack Iran's nuclear facilities. Stuxnet initially spreads via microsoft windows, and targets Siemens industrial control systems
     - 
 
-*************************************************************************************************************************************************
+********************************************************************************
                                             June 6th Notes
 
 DIA:    - 88 airport gates in 3 concourses
@@ -72,7 +72,7 @@ Design contraints:
     - statements the constrain the ways in which the software can be designed and implemented
     - Platform, language, DB, Webapp, GUI, etc. 
 
-***********************************************************************************************************************************************
+********************************************************************************
 June 10th
 Local respository (repo):
     - Local Git comandes:
@@ -127,4 +127,109 @@ How we represent graphs: - List of linked lists
                             - graphs, digraphs, multigraphs
                             - well tested (>90% coverage)
                             - very 00 compliant
+
+********************************************************************************
+                                June 12th
+What I did since last time:
+    -I went on networkX webcite and went over the network package, more psecificly how to set up graphs with nodes and edges and how networks would be set up usinf them
+    -I also continued reading 5 dysfunctions of a team, about half way done with the book
+
+What I will do for next time:
+    -I will start working on our trello task once those are finished being set up
+    -I will also continues reading 5 dysfunctions, trying to finish that by the weekend
+
+Blockers:
+    -The API isnt out yet and because of that we aren't sure what we should start programming, hopefully the API will soon be released that way we are able to start working on things
+
+Python notes:
+    -A dictionary is a key value term, python is a multiple dictionary 
+    -Python allows method refrences, thye are considered first class objects/ vakues
+    -example the key word is "GO"  and the value would be food, once the key matches the value then it does something
+        * EX; {"go", food}
+             -{"Move", food}
+    -When looking for a language look up why that language was made for, it will help you out a lot more and make everything a lot better. 
+    -
+
+Non-functional requirement Examples
+    -Performance
+    -Real-time Performance
+    -maintainability
+        *readability
+        *modualaritiy
+        *debugability
+
+Analysis:
+    -Static; analyzing the (non running) code
+        *Linters, cyclomatic complexity, method length, etc
+        *Pylint, sonar cloud, radon, checkstyle
+
+    -Dynamic; analyzing a running program
+        *spotbug, valgrind, purify
+
+Testing:
+    -Acceptance; the customer saying this is what we asked for, when the requirments are met
+    -Unit: method; test driven programs, write a test first and then the functunality, if you cant test your code then how are you writting your code
+        -write just enough code for it to pass (TDD), write a test then write the code that passes that test, that you know what kind of code you are writting 
+    -intergration: class; this is when you test the whole class, once we know the method works we have to check and make sure the whole class works and passes the test
+    -system; 
+
+Unit Test:
+    -Arguably the most important
+    -many modern SE methods use"test first"
+        -write a test
+        -make sure it fails 
+        -write just enough code to make sure it works
+    -if you don't know how to test it, how can you write it
+    -correct frame of mind 
+    -Test-Driven 
+
+Implementation
+    -SE tends to focus on requirments, design and processes
+    -a bad implementation will ruin everything else 
+
+Guidelline: style
+    -E.G.: The elements of java style by scott amber and trevor misfeldt
+    management and leadership are 2 crutial for the indoustry 
+    book recommendation good the great 
+
+Guideline: naming
+    -Use good descriptive names
+    - Probably not hungarian notation
+        -crszkvc 30lastNameCol: a constant refrence argument, holding the contents of a database column LastName of type varchar(30) which is part of the tables primary key
+        -type checking now done by IDE and compiler   
+
+Guideline: test:
+    -every method has unit test
+    -Test must be easy to run and run a lot
+        -E.g.: unit
+    -TDD
+
+Guideline: use libraries
+    -Developed and tested by many others
+    -Don't re implementation
+        -you need to learn what is possible
+        -yes, you may know how and think you're better, but you're not
+        -Write something that no one else has written
+
+Guideline: reviews
+    -code reviews are very effective for improving quality
+    -Knowing that someone else will be looking affects you
+    -other things you don't know
+
+Guidelines
+    -We'll be covering other guidelines such as DRY, YAGNI, SOLID, Liskov substitution principle, etc.
+    -Don't ever repeat code,
+
+Agile:
+    -Many different process that emphasize short release cycles and that allow changes in design
+    -Focus on human and term aspects
+    -Change is always inveritable, because code changes all the time 
+    -short releases and iterations
+    -incremental designUser involvement
+    -lightweight documentation 
+    -infromal communication 
+    -change 
+    -Give users the least amount of functionality and twords the end they will seee how much it grows and will be happier
+    -Dont ever say im sorry, when the user changes their mind you say yes and... your change is going to have this affect 
+    
 

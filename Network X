@@ -1,0 +1,8 @@
+NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks,
+    -the created networks can be used in order to determine which direction we can take the user to. 
+    -data structures and graphs can be made from nextworkX
+
+Creating a graph:
+    import networkx as nx
+    G = nx.Graph()
+
