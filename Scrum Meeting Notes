@@ -10,3 +10,40 @@ Look up/reseach python libraies that build/generate mazes
 Use network X (from notes) 
 
 Priority: research how to use a command line to perform action commands from user, which make the game interactable. 
+
+        June 12th
+We should start working on the dictionary, since we dont have the API at least get a head start to the dictionary
+Using iherantance of passing a key value and something would happen and it will get called and continuing the game
+For the theme of the game we are thinking about doing an escape room, or saw sounding game 
+For refrences: -Saw movies
+                -Cube movies
+                -Horror type game
+                -based on actions you will die
+                -Horror adventure 
+
+
+********************************************************************************
+                    June 13
+
+These Notes are from Lukes talk about the design/architecure of the game:
+
+-We are creating a game engine so that way if someone else would like to use to make a different game with our draft thye can
+- It should go USER ---------> CLI-----------> GE
+                    <--------     <----------  | |
+                                               | |
+                                    (model)  STATE .yml (the game engine will read the yml file and read and sent to the user)
+   
+    -This is a model view architecure 
+    -Smite (subject )
+    - We need a read-excel-print-loop formula 
+
+    -the game engine will have a map system that will also have rooms with different items in them that can be interracted by the user
+    -the room should be able to tell you if you visted maybe something wont open unless you have a specific item to them 
+    -NPC: you may add NPC to the game at your own wil, ex: npc will give you choices that your choice will eithre take you to state 2 or keep you at state one unless a specific task was/is met
+                                                ____________
+                                                |A1   | R1  |
+                                                |_____|_____|
+                                                |A2   |R2   |
+                                                |_____|_____|
+
+    -for this sprint npcs are not required 

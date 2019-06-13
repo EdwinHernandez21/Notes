@@ -231,5 +231,28 @@ Agile:
     -change 
     -Give users the least amount of functionality and twords the end they will seee how much it grows and will be happier
     -Dont ever say im sorry, when the user changes their mind you say yes and... your change is going to have this affect 
-    
+
+
+********************************************************************************
+                        June 13
+Since last time: 
+    -I started reading head first deign patters I also looked at command prompt designing on youtube, just getting prepared to start programming
+
+For next time: 
+    -I will definitly look at Lukes files that he uploaded and get started on programming 
+    - Finish 5 dysfunctions of a team and continue head first 
+
+Blockers:
+    -Not sure what my individual tasks are and where to start
+
+TDD (Test Driven Design) example:
+    -open folder/ create a new folder
+    -creat new file with ".py" for a python project
+    -creates a method that adds 2 strings together, "def AddString( one, two)
+    -creater new file method/file named "testAddString" 
+    -open it and add "def Test_addString():" -this will look for all files that starts with Test or Test_ 
+    -Base case is when something is passed and nothing is returned 
+    -SO we want nothing to be returned so need to create a 
+    -the test we tried will not let us fail because python automactically will return none therefore the test will never fail
+    -
 
