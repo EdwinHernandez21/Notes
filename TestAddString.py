@@ -6,7 +6,7 @@ def AddString(one, two):
         return ""
     elif two is None and isinstance(one, str):
         return ""
-    elif
+    else:
         return None
 
 def test_addString():
@@ -21,15 +21,5 @@ def test_addString():
         assert False
     excpet TypeError:
         assert True
-
-def AddString(one, two):
-    if one is not None and two is not None:
-        return one+two
-    else:
-        return None
-
-def Test_addString():
-    assert AddString(None, None) == None
-    assert AddString("", "") == ""
 
 test_addString()
