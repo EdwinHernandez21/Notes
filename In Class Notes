@@ -28,9 +28,13 @@ Why 7: - optimized brain capacity because early hunting parties were that big
 
 What's the problem: - Mariner 1, a 500 mil space craft was lost in space before we even got to use it
     - they used a different math symbal and not the correct one and they didn't run test and therefore it became lost
-    - Therac 25, a radiation mechine that was made to treat cancer. in 1987 a couple of people was exposed to too much radiation due to a misfunction in the software and killed about 6 people to overduce of radiation
-    - Ariane 5, a rocket that was used, used the same code as the ariane 4 and because of this it wasn't up to date and made it explode right after it took off because it was faster and bigger than the ariane 4
-    - stuxnet is a computer worm discovered in june 2010 that is belived to have been created by the United States and Israeli agenncies to attack Iran's nuclear facilities. Stuxnet initially spreads via microsoft windows, and targets Siemens industrial control systems
+    - Therac 25, a radiation mechine that was made to treat cancer. in 1987 a couple of people was exposed to too much 
+    radiation due to a misfunction in the software and killed about 6 people to overduce of radiation
+    - Ariane 5, a rocket that was used, used the same code as the ariane 4 and because of this it wasn't up to date and made it 
+    explode right after it took off because it was faster and bigger than the ariane 4
+    - stuxnet is a computer worm discovered in june 2010 that is belived to have been created by the United States and Israeli 
+    agenncies to attack Iran's nuclear facilities. 
+    Stuxnet initially spreads via microsoft windows, and targets Siemens industrial control systems
     - 
 
 ********************************************************************************
@@ -256,3 +260,194 @@ TDD (Test Driven Design) example:
     -the test we tried will not let us fail because python automactically will return none therefore the test will never fail
     -
 
+********************************************************************************
+                        June 17th
+What I did since last time:
+    -I read head first deign later
+    -I started working on the movement for the game
+What I will do for next time:
+    -download network networkx
+    -use it to generate graphs and grids
+Blockers:
+    -All personal things work and time related
+
+Agile:
+    -short releases and iterations
+    -incremental design 
+    -user involvement 
+    -lightweight document 
+    -informal communication 
+    -change 
+    -We never tell the customer no but we have to educate them on what the change means, as in the due date increased
+
+*if someone gives you a glowing review with no weaknesses than you are in trouble, a balanced review is the best 
+
+Why Agile:
+    -lengthy development items
+        -overall development time not reduced but many releases 
+    -Difficulty in reponding to change requirements 
+        -now change is expected and part of process
+    -All requirments not understood at beginning
+    -Too much reliance on heroic effort
+    -Processes too complex
+        -RUP: 100 tasks and 30 roles
+        -Too much overhead
+    -Too much waste and duplication
+        -UML and code
+        -Code now source of design, everything else doesn't matter only the code matters
+
+Agile Promises:
+    -finished product always avalible
+    -Normal effort by team 
+    -Deal with change 
+
+What really matters? when it comes to developing software
+    -"human interactions are complicated and never very crisp in their effects, but they matter more than any other aspect of the work." -DeMarco and Lister
+    -"Process and technology are a second-order effect on the outcome of a project. The first-order effect is the people" -Cockburn
+
+What to do?
+    -how do we manage the teams that are required to produce software?
+    -Process hasn't created what it promised
+        -Smooth software development
+    -People tend to want to control everything, controlling your enviornment
+        -1) Add more process
+        -2) when that doesnt work (which it can't), go back to 1)
+    -If process were the answer, you'd think we'd've figured it out by now
+        -if it were easy, it'd be done
+    -Indeed, process can cause more problems than it solves
+        -becomes cumbersome and slows progress
+
+Manifesto for Agile Software Development 
+    -we are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value:
+        -indivuals and interactions over processes and tools 
+        -Working software over comprehensive documentation
+        -customer collaboration over contract negotitation
+        -responding to change over following a plan 
+
+Individuals and interactions over Processes and Tools 
+    -Good process won't fix bad teams members
+    -Bad process will hinder good team members 
+    -Everyone must work together to succeed
+    -Strong team memebers not necessarily strongest programmer, designer, etc.
+        -Communication and interaction make for strong team members
+    -Start small with tools and processes and only increase when truly needed
+    -Don't create the environment first
+    -Create the team and let them create environment
+
+Working software over comprehensive documentation
+    -Software without documentation is a disaster
+    -Need to describe system and document design decisions
+    -Large amount of documentation can become cumbersome and out of sync
+    -knowledge transferred in the team by direct interaction
+    -produce no documnet unless its need is immediate and significant
+
+Customer Collaboration over contract negotiation:
+    -Successful projects get customer feedback early and often
+    -Best contracts specify how theam and customers interact 
+
+Responding to change over following a plan:
+    -Things change, all them time 
+        -And you might as well accept it
+        -And your customers will be happier with product
+    -Team gains knowledge about problem 
+    -Customers gain knowledge about solution
+    -Detailed plans for next two weeks, plans for three months, crude after that 
+
+        **That was the introduction to software engennerring**
+
+Check router to see if UNPNP is off
+
+********************************************************************************
+                    June 19th
+What I did since last time:
+    -I strated using network networkX
+    -I looked over yaml files 
+    -working on maze and room generate 
+What I will do for next time:
+    -Continue working with networkX and using it to build graphs 
+    -Pair program with my group to get our map/graph working and work on head first book
+Blockers: 
+    -I feel like I spend too much time studying and not enough time programming 
+
+Design Patterns:
+
+Wikipedia:
+    -design patterns are formalized best practices that the programmer can use to 
+    solve common problems when designing an application or system 
+    
+    Why talk about design patterns:
+        -creates a shared vocabulary
+            -developers can interact in richer terms
+        -Keeps thinking/ designing at the abstract(pattern) level
+            -Creates better (more flexible, reusable, etc.) designs 
+Origin:
+    -patterns originated as an architectural concept by Christopher Alexander (1977/79)
+    -in 1987, kent Beck and Ward Cunningham began experimenting with the idea of applying patterns to programming 
+    specifically pattern languages and presented their results at the OOPSLA confrence 
+Chirstopher Alexander: -In software, Alexander is regulated as the father of the pattern language movement
+    -A patteren language: towns, building, construction (1977) described a practical architectural system 
+    in a form that a theoretical mathematician or computer scientist might call a generative grammar
+    -The timeless way of building (1979)
+    -Alexander's notes on the synthesis of form was said to be required reading for researchers in computer science 
+    -Alexander's mathematical concepts and orientation were similar to E
+Group and Concepts: 
+    -Design patterns were originally grouped into the categories
+        -creational patterns
+        -strucural patterns 
+        -behavioral Patterns
+    -And described using the concepts of 
+        -delegation
+        -aggregation
+        -consultation 
+First design Principle:
+    -Identify the aspects of your application that vary and separate them from what stays the same 
+    -You can alter or extend without affecting other parts 
+    -Basis of almost every design pattern 
+    -Also creates more easily reusable objects 
+
+Second design principle:
+    -Program to an interface, not an implementation
+        -Not necessarilly a java interface 
+        -Program to a supertype
+            --Private map< string, boolean> urls = new concurrentHashMap <String, boolean> ();
+        -can then better use polymorphism
+        -can more easily change implementation 
+
+Third design principle:
+    -favor composition over inheritance
+    -favor has-a relationships over is-a relationships
+    -inheritance limits reusability 
+
+Strategy Pattern:
+    -defines a family of algorithms, encapsulates each one, and makes them interchangeable
+    -strategy lets the algorithm vary independtly from the clients that use it 
+    -We dont really use UML as much as we used to before but we usually now use it for documentation
+
+Chapter 2 in design book:
+
+The observer Pattern:
+    -defines a one to many dependency between objects so that when one object changes staet, all 
+
+    -The observer pattern is a software design pattern in which an object, called the subject, maintains a 
+    list of its dependents, called observers and notifies them automatically of any state changes, usually by calling one of their methods
+    -It is mainly used to implement distributed event handling systems, in "event driven" software 
+    -the observer pattern is also a key part in the design
+    -this is a behaviour pattern because it depends on the relationship when a state changes something else will change
+
+Design Principle:
+    -Strive for loosely-coupled designs between objects that interact 
+    -Objects have very little infromation about each other
+    -No shared state 
+Decoupling:
+    -The observer pattern helps decouple objects
+    -The sunject knowns only that the observer implements the observer interface
+    -New observers can be added at any time
+    -New types of observers can be added 
+    -can reuse subjects and observers independtly 
+    -changes have no affect on each other 
+Warnings:
+    -dont depend on order of evaluation of notifications 
+    -java observable is a class 
+        -not an interface 
+        -must inherit 
+        -set changed() is protected 
