@@ -464,3 +464,114 @@ Warnings:
     -5 dysfunctions of a team
     -and all designs patterns that we  go over in class
     -Mid term June 27th 
+
+********************************************************************************
+                        June 24th
+Since last time:
+    -I become product owner 
+    -Had a conversation with Dan (scrum master) and in what direction the team is going 
+    -Finshed reading 5 dysfunctions
+For next time: 
+    -pair program for the cli 
+    -study for the test based off head first design later
+    -try and finish our product backlog 
+Blockers:
+    -No Blockers 
+
+The Open/close principle
+    -Designs shoulc be open for extension, but closed for modification 
+Decorators:
+    -Have the same super type of the objects they decorate
+    -can have one or more Decorators
+    -can pass wrapped object anywhere original could passed
+    -adds behavior before and/or after delegating object 
+    -Objects can be decorated at runtime 
+-in python everything after "def" is an object 
+-all variables are refrences in python 
+-everything in python is an object 
+
+The decorator Pattern:
+    -attaches additional responsibilities to an object dynamically
+    -provide a flexible alternative to sub-classing for extending functionality 
+Inheritance:
+    -using inheritance to get type matching but not behavior 
+        -java requires this, other languages dont
+-You can make decorators in java but it has to be through inheritance 
+
+                    Chapter 4: The Factory Pattern:
+Factories:
+    -Hnadles the details of object creation 
+        -encapsulates the creation in subclass
+        -decouples interface from creation
+    -can return a variety of types
+    -can add additional types easily 
+    -If static, can't subtype to extend 
+Wikipedia def:
+    -the factory method pattern is creational pattern that uses factory methods 
+    to deal with the problem of creating objects without having to specify the exact class of the object that will be created
+Absration:
+    -Factories don't have to be abstract 
+        -can have default and that can call down if necessary 
+The dependency inversion principle:
+    -depend upon abstractions
+    -do not depend upon concrete classes 
+Wikipedia def:
+    -High level modules should not depend on low level modules 
+        -both should depend on abstractions
+    -abstractions should not depend on details
+    Traditional view:
+        Polocy view -----> mechanism layer ------> utility layer 
+        (if one of them changes then you have to change all the other layers)
+Therefore:
+    -no variable should hold refrences to a concrete class 
+    -no classes should derive from a concrete class
+    -no method should override an implemented method of any of its base classes 
+dependency Injection:
+    -a technique whereby one object (or static method) supplies the dependencies of another object 
+    -A dependency is an object that can be used (a service)
+    -An injection is the passing of a dependency to a dependent object (a client) that would use it 
+    -The service is made part of the client's state 
+    -passing the service to the client, rather than allowing a client to build or find the service, is the fundamental requirement of the pattern 
+    -this fundamental requirement means that using values (services) produced within the class from new or static methods is prohibited
+    -the client should accept values passed in from outside 
+    -this allows the client to make acquiring dependencies someone else's problem
+    -the intent behind dependency injection it to...
+Inversion of control:
+    -A design principle in which custom written portions of a computer program receive the flow of control from a generic framework 
+    -a software architecture with this design inverts control as compared to traditional procedural programming 
+        -in traditional programming, the custom code that expresses the purpose of the program calls into reusable libraries to take care of generic tasks 
+        -With inversion of control, it is the framework that calls into the custom, or task-specific, code 
+Abstract factory pattern:
+    -provides an interface for creating families of related or dependent objects 
+    -has the most complicated UML out of all the patterns 
+Abstract vs Non:
+    *Factory:
+        -creation through inheritance
+        -creates objects of a single type
+    *Abstract factory:
+        -creation through composition 
+        -instantiated via new and passed 
+        -creates families of related objects via factories 
+
+                    #Chapter 5: The singleton
+Need only one of:
+    -thread pools, caches, dialog boxes, perferences, logging, device drivers, I/O 
+    -But: might not need each time, so lazy initialization 
+Pattern:
+    -
+Threading:
+    -synchronize get
+*double checked locking
+Visibilty and synchronized:
+
+Volatile: 
+    -reads and writes happen to main memory 
+        -not from individual CPU caches 
+    -writes to a volatile also write all the thread 
+Atomic:
+    -any write to a volatile variable 
+    -reads and writes are atomic for refrences variables and for most primitive variables (except long and doubles)
+    -reads and writes are atomic for all variables decleared volatile (including long and double variables)
+Volatile now always enough:
+    -if there is a read/modify/
+    (a good book for OS twords the end of the semester Java concurrency in prectice by Brian Goetz )
