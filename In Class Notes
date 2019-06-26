@@ -575,3 +575,77 @@ Atomic:
 Volatile now always enough:
     -if there is a read/modify/
     (a good book for OS twords the end of the semester Java concurrency in prectice by Brian Goetz )
+
+    ********************************************************************************
+                                June 26th
+For the test look at the design book, remember patterens are based off the principles
+
+Chapter 6:
+    Command Pattern:
+        -A behavioral design pattern in which an object is used to encapsulate...
+    Participants:
+        -client is responsible for creating a concrete command and setting its receiver
+        -Invoker holds a command object 
+        UML:
+        caller-----> command <----concrete command ----> receiver <------client
+                                        ^                                   |
+                                        |                                   |
+                                        |------<--------<----------<---------
+
+Chapter 7:
+    The adapter patttern:
+        -converts the interface of a class into another interface the clients expect 
+        -adapter let classes work together that couldn't otherwise because of incompatible interfaces 
+    two types:
+        -object adapters 
+        -
+        UML: client to target, adapter to target, adapter to adaptee 
+        *the only question would be, are we going to a class or object?
+    facade:
+        -provides a unified interface to a set of interfaces in a subsytem 
+        -facade defines a higher level interface that makes the subsystem easier to use 
+    *the maindifference between a facade and adapters is that facades have more things going on behind the curtons while adapters are pretty straight forword
+    difference:
+        -adapters alter and interface 
+    Principle of least knowledge:
+        -talk to only immediate friends 
+        -decouples
+        -methods may talk to 
+            -their own object 
+            -objects passed as parameters 
+            -objects they instantiate 
+            -instance variables
+
+Chapter 8 templete:
+    Wikipedia:
+        -behavioral design pattern that defines the program skeleton of an algorithm in an operation, deferring some steps to subclasses
+        -it lets one redifine 
+    UML:    abstract class (template method) <-------- sub classes 
+    a template is just when a class uses subclasses 
+    Hot beverage:
+        -for both coffee ad tea
+            -boil water(same, in base class)
+            -use hot water to extract (different, abstract in base classes)
+            -pour into cup (same)
+            -add condiments (different)
+        -preparedRecipe is template method 
+            -preparedRecipe method
+                -is template class
+        Hooks:
+            -can define concrete methods that do nothing unless subclass overrides them 
+            -use abstract when subclass must implement, hooks when optional 
+        Hollywood principle:
+            -Don't call us, well call you
+            -Low-level hooks into system , high level calls at the appropriate time
+            -java Arrays.sort calls compareTo()
+    Summary:
+        -To prevent subclasses from changing the algorithm, make the template method final 
+        -both the strategy and template patterns encapsulate algorithms 
+            -strategy via composition 
+            -template via inheritance
+        -factory is very specialized template
+            -returns result from subclass 
+            -factory pattern is a creational template 
+
+
+ 
