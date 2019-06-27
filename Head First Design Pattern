@@ -1,0 +1,49 @@
+
+
+First design Principle:
+    -Identify the aspects of your application that vary and separate them from what stays the same 
+    -You can alter or extend without affecting other parts 
+    -Basis of almost every design pattern 
+    -Also creates more easily reusable objects 
+
+Second design principle:
+    -Program to an interface, not an implementation
+        -Not necessarilly a java interface 
+        -Program to a supertype
+            --Private map< string, boolean> urls = new concurrentHashMap <String, boolean> ();
+        -can then better use polymorphism
+        -can more easily change implementation 
+
+Third design principle:
+    -favor composition over inheritance
+    -favor has-a relationships over is-a relationships
+    -inheritance limits reusability 
+
+Strategy Pattern:
+    -defines a family of algorithms, encapsulates each one, and makes them interchangeable
+    -strategy lets the algorithm vary independtly from the clients that use it 
+    -We dont really use UML as much as we used to before but we usually now use it for documentation
+
+The observer Pattern:
+    -defines a one to many dependency between objects so that when one object changes staet, all 
+
+    -The observer pattern is a software design pattern in which an object, called the subject, maintains a 
+    list of its dependents, called observers and notifies them automatically of any state changes, usually by calling one of their methods
+    -It is mainly used to implement distributed event handling systems, in "event driven" software 
+    -the observer pattern is also a key part in the design
+    -this is a behaviour pattern because it depends on the relationship when a state changes something else will change
+
+SOLID:
+    -SOLID is a mnemonic acronym for five design principles
+
+    *Single responsibility principle[6]
+        -A class should only have a single responsibility, that is, only changes to one part of the software's specification should be able to affect the specification of the class.
+    *Open–closed principle[7]
+        -"Software entities ... should be open for extension, but closed for modification."
+    *Liskov substitution principle[8]
+        -"Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program." See also design by contract.
+    *Interface segregation principle[9]
+        -"Many client-specific interfaces are better than one general-purpose interface."[4]
+    *Dependency inversion principle[10]
+        -One should "depend upon abstractions, [not] concretions."[4]
+
