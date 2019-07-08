@@ -810,4 +810,207 @@ Resumes:
         -typically have to eat with them 
             -learn some tables manners 
         
+Overall:
+    -Arrive at least 15 minutes early, but enter 8-10 minutes early 
+    -Bring a notepad and make if necessary 
+    -bring extra Resumes
+    -follow Up:
+        -the same day 
+        -Say thanks, you know how much it is, if there is anything else you can provide to help
+        -following up with the hiring manager that same day to say thank you for taking time out htere day  
+Personal:
+    -Dress well
+    -Eye contact 
+    -Body Language 
+        -Don't cross your arms or legs 
+        -lean in 
+        -Avoid your nervous habits 
+    -Don't wear Axe 
+        -many people sensitive/allergic to artificial 
+    
+What you want:
+    -You're interviewing them as much as they you 
+        -You don't want to work for just any place 
+        -Unless you can grit your teeth for a year and build your resume 
+        -Maybe check out https://ww.glassdoor.com/ 
+            -people reviews their work place 
+        join msu lindin to see about any question that come
+        if they ask about salary say that you know its a competetive feild and that your main priority is ______
+    -Working at some places is the worse than not working in the field for a time 
+        -trailing edge technology that traps you 
+        -A place you can't excel in 
+        -Churn and burn 
+        -Try ACM its a research peper that revolves around new technology / the game field 
+
+********************************************************************************************
+                                    July 8th
+Since last time:
+    I worked on writting our game script, also met with the team and talked about merging our cli and game engine together 
+
+For next time:
+    I will meet with out team and talk about the solutions that we can come up with to merge our program parts 
+
+Blockers: -none
+
+User Story break down:
+    "As a user I want rooms to be able to hold item by the player and room" 
+    break it down to 2 item holders, 
+        Room: 
+        break it back up since it is also a big task 
+        -test for excistance 
+        -add to list 
+        -remove from list 
+        -load list 
+        -save to room 
+
+        PLayer: cannot implement a player to hold items in less than 3 hours with testing, break it down more 
+        -test for uniqueness [3]
+        -add to list [2]
+        -removal from list [2] 
+        -original estimate was 5 hours but it turned into a 7 hour projrct 
+
+        Item: we need to add a spike since we don't know what some of these things are 
+        -spike-research save / load 
+            -put on backlog [1]
+            -finish breading up later [2] 
+
+
+        Room -----------------------------------------> Items ----------------------------> Player 
+        |                  0-n 
+        |
+        |
+        Player              
+
+How to get a job continued...
+
+what you want:
+    Working at some places is wore than not working in the field for a time
+        -trailing edge technology 
+
+What to ask:
+    -why do you work here?
+    -What are working conditions?
+    -What SE lifecycle is used?
+    -What is the tool chain?
+    -HR 
+        -how are the benefits 
+            -health, vacation, retirement 
+
+Types of QUestions:
+    -computer science:
+        -algorithms and data structures 
+        -O of algorithms and choosing 
+        -Imperative vs functional
+        -www://www.nerdparadise.com/te..
+
+What have you done: 
+    -Make sure you did what is on your resume are ready to talk about 
+    -They are looking for specifics 
+    -Give a concrete example 
+    -If you don't have an example, say so 
+
+-This is known as the star methods 
+
+Languages: 
+    -when would you use an anonymous inner class in java 
+    -what's a lambda?  *they are nameless functions 
+        -KNow your versions 
+    -Whats a closure
+        - a refrence to a ____ method that can be called when 
+
+OOPSLA  
+    -what are the major functions of OO?
+        -abstraction, encapsulation, inheritance, polymorpjism 
+    -what is an interface 
+    -what is a virtual method 
+    -Deep vs shallow copies 
+    -Dependency inversion/inversion of control 
+        -framework 
+    -design patterns 
+
+Do me a SOLID 
+    -S;  Single responsibilities 
+        -classes do 1 thing 
+    -O; open-closed principle 
+        -open extenstion 
+    -L;
+    
+    -I; interface segregation principle
+
+OS: -Concurrency 
+
+Networks: -IP v4 addressing 
+    -TCP vs. UPD 
+
+Software Engineering 
+    -Git, Github 
+    -Angile Manifesto 
+    -TDD 
+    -Dry, 
+
+Web 
+    -MVC 
+    -ORM 
+    -Ajax 
+
+Questions
+    -why are manhole covers round? 
+    -What is 2^24 
+    -How usable addressing in a class C network? 
+    -What are your strengths and weaknesses 
+        -no kidding 
+    -Why do you want to work here
+        -intreseted in their technology, something, you would like to increase your development skills 
+
+Tough Questions 
+    -They typically will ask a few very difficult questions 
+        -to show off 
+        -to see how you reason 
+    -How many trees are in CONUS 
+    -How far away is the moon 
+
+Verbal Hints
+    -we speak not only to tell other people what we think, but to tell outselves what we think. 
+    -dont say "I fell like"  I think is what you have to say 
+        -no one cares how you feel 
+        -you hopefully mean "i think" or "I belive"  
+    -try to avoid "like"
+        -unless you are making a simile
+        -also "um", "you know" and "got"
+    -don't use "literally"
+        -unless you almost always talk f
+    -Irregardless is not a word
+        -regardless is 
+        -irrespective is 
+    -Don't say methodology 
+    -the word DATA is plural 
+    -Don't make jokes 
+    -Don't BS 
+Guerrilla Interviewing: 
+    -Looking for smart people who get things done 
+    -Introduction 
+    -Question about recent project candidate worked on 
+    -Easy Programming Question 
+    -Pointer/Recursion Question 
+    -Do you have any questions? 
+Some Typical: 
+    -PLease tell me about yourself 
+    -What makes you intrested into this place 
+    -WHy did you choose this field 
+    -Resources https://
+    Cracking the coding interview is a book that is highly reccomened 
+    -they cant tell you why they didn't hire you 
+
+    interview support 
+    -security plus will help you 
+    -you just have to differentuace yourself 
+    -gotta show that you are bteer than the other person 
+    -AWS certification is really helpful to have 
+    -
+
+    -if you cant say it in 2 complete sentences then you don't know it 
+    -Molly Weller is incharge of COMPSCI for internship 
+
+
+
 
