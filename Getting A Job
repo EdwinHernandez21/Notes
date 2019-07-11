@@ -140,3 +140,130 @@ What you want:
         -Churn and burn 
         -Try ACM its a research peper that revolves around new technology / the game field
         
+what you want:
+    Working at some places is wore than not working in the field for a time
+        -trailing edge technology 
+
+What to ask:
+    -why do you work here?
+    -What are working conditions?
+    -What SE lifecycle is used?
+    -What is the tool chain?
+    -HR 
+        -how are the benefits 
+            -health, vacation, retirement 
+
+Types of QUestions:
+    -computer science:
+        -algorithms and data structures 
+        -O of algorithms and choosing 
+        -Imperative vs functional
+        -www://www.nerdparadise.com/te..
+
+What have you done: 
+    -Make sure you did what is on your resume are ready to talk about 
+    -They are looking for specifics 
+    -Give a concrete example 
+    -If you don't have an example, say so 
+
+-This is known as the star methods 
+
+Languages: 
+    -when would you use an anonymous inner class in java 
+    -what's a lambda?  *they are nameless functions 
+        -KNow your versions 
+    -Whats a closure
+        - a refrence to a ____ method that can be called when 
+
+OOPSLA  
+    -what are the major functions of OO?
+        -abstraction, encapsulation, inheritance, polymorpjism 
+    -what is an interface 
+    -what is a virtual method 
+    -Deep vs shallow copies 
+    -Dependency inversion/inversion of control 
+        -framework 
+    -design patterns 
+
+Do me a SOLID 
+    -S;  Single responsibilities 
+        -classes do 1 thing 
+    -O; open-closed principle 
+        -open extenstion 
+    -L;
+    
+    -I; interface segregation principle
+
+OS: -Concurrency 
+
+Networks: -IP v4 addressing 
+    -TCP vs. UPD 
+
+Software Engineering 
+    -Git, Github 
+    -Angile Manifesto 
+    -TDD 
+    -Dry, 
+
+Web 
+    -MVC 
+    -ORM 
+    -Ajax 
+
+Questions
+    -why are manhole covers round? 
+    -What is 2^24 
+    -How usable addressing in a class C network? 
+    -What are your strengths and weaknesses 
+        -no kidding 
+    -Why do you want to work here
+        -intreseted in their technology, something, you would like to increase your development skills 
+
+Tough Questions 
+    -They typically will ask a few very difficult questions 
+        -to show off 
+        -to see how you reason 
+    -How many trees are in CONUS 
+    -How far away is the moon 
+
+Verbal Hints
+    -we speak not only to tell other people what we think, but to tell outselves what we think. 
+    -dont say "I fell like"  I think is what you have to say 
+        -no one cares how you feel 
+        -you hopefully mean "i think" or "I belive"  
+    -try to avoid "like"
+        -unless you are making a simile
+        -also "um", "you know" and "got"
+    -don't use "literally"
+        -unless you almost always talk f
+    -Irregardless is not a word
+        -regardless is 
+        -irrespective is 
+    -Don't say methodology 
+    -the word DATA is plural 
+    -Don't make jokes 
+    -Don't BS 
+Guerrilla Interviewing: 
+    -Looking for smart people who get things done 
+    -Introduction 
+    -Question about recent project candidate worked on 
+    -Easy Programming Question 
+    -Pointer/Recursion Question 
+    -Do you have any questions? 
+Some Typical: 
+    -PLease tell me about yourself 
+    -What makes you intrested into this place 
+    -WHy did you choose this field 
+    -Resources https://
+    Cracking the coding interview is a book that is highly reccomened 
+    -they cant tell you why they didn't hire you 
+
+    interview support 
+    -security plus will help you 
+    -you just have to differentuace yourself 
+    -gotta show that you are bteer than the other person 
+    -AWS certification is really helpful to have 
+    -
+
+    -if you cant say it in 2 complete sentences then you don't know it 
+    -Molly Weller is incharge of COMPSCI for internship 

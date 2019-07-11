@@ -9,7 +9,8 @@ Not a problem:  -it makes a lot of money
 
 * close source software is like a cathidrol where it takes time and a lot of money to complete
 * open source software is like the oposite you create it for yourself, like github
-* whats up and we chat are the two biggest messeging apps in the world, whats up was made up by  people and it was sold to fb for billion $
+* whats up and we chat are the two biggest messeging apps in the world, whats up was made up by  people and it 
+was sold to fb for billion $
 
 Software is complex:
     - Software is crazy complex, bowing (air plane software) took  people,  huors a week,  weeks per month
@@ -23,16 +24,22 @@ Software is complex:
 
     - The human brain can only keep track of 7 things at the time i our active memory
 Why 7: - optimized brain capacity because early hunting parties were that big 
-    - we need to make sure that the profgram we are writting has 7 or fewer things going on, of there are more than you dont know what is going on
-    - we are in about the same level on complexity as small living creatures as mouse, a wow npc has the same iq as a mouse (5)
+    - we need to make sure that the profgram we are writting has 7 or fewer things going on, of there are more 
+    than you dont know what is going on
+    - we are in about the same level on complexity as small living creatures as mouse, a wow npc has the 
+    same iq as a mouse (5)
 
 What's the problem: - Mariner 1, a 500 mil space craft was lost in space before we even got to use it
-    - they used a different math symbal and not the correct one and they didn't run test and therefore it became lost
-    - Therac 25, a radiation mechine that was made to treat cancer. in 1987 a couple of people was exposed to too much 
+    - they used a different math symbal and not the correct one and they didn't run test and therefore it 
+    became lost
+    - Therac 25, a radiation mechine that was made to treat cancer. in 1987 a couple of people was exposed 
+    to too much 
     radiation due to a misfunction in the software and killed about 6 people to overduce of radiation
-    - Ariane 5, a rocket that was used, used the same code as the ariane 4 and because of this it wasn't up to date and made it 
+    - Ariane 5, a rocket that was used, used the same code as the ariane 4 and because of this it wasn't up 
+    to date and made it 
     explode right after it took off because it was faster and bigger than the ariane 4
-    - stuxnet is a computer worm discovered in june 2010 that is belived to have been created by the United States and Israeli 
+    - stuxnet is a computer worm discovered in june 2010 that is belived to have been created by the United 
+    States and Israeli 
     agenncies to attack Iran's nuclear facilities. 
     Stuxnet initially spreads via microsoft windows, and targets Siemens industrial control systems
     - 
@@ -45,22 +52,28 @@ DIA:    - 88 airport gates in 3 concourses
     - they just hvae a lot of things being a huge airport
     - All this stuff and thye are 16 months past its hard deadline
     - its costing the city 560 million over budget
-    - the automative convairebelt is so bad they took it out and are using physical carts for luggage and its costing them a lot of money
+    - the automative convairebelt is so bad they took it out and are using physical carts for luggage and its 
+    costing them a lot of money
     - turns out the software is very bad its terrible 
     
 Chaos 1995: - 31% of projects will be canceled before they ever get completed, mostly software projects
     - american companies and government agencis will spend 81 million on software projects
     - The average is only 16.2% for software projects that are completed on-time and on-budget 
     - In the larger companies, the news is even worse: only 9% of their projects come in on-time and on budget 
-    - Projects completed by the largest american compaines have only approximately 42% of the originally-proposedfeatures and functions
+    - Projects completed by the largest american compaines have only approximately 42% of the originally-proposedfeatures 
+    and functions
     - Smaller compies tend to do a lot better than major larger companies
 No Silver Bullet:
-    - There is no single development, in either technology or management technique, which by itself promises even one order of magnitude improvement within a decade in productivity, in reliability, in symphathy 
-    - We dont need to create a new calculator, or a new tic tiok game, we need to create new things, all the easy stuff is already done
+    - There is no single development, in either technology or management technique, which by itself promises even 
+    one order of magnitude improvement within a decade in productivity, in reliability, in symphathy 
+    - We dont need to create a new calculator, or a new tic tiok game, we need to create new things, all the 
+    easy stuff is already done
 Engineering:
-    - software engineering is the study and an application of engineering to the design, development, and maintenance of software
+    - software engineering is the study and an application of engineering to the design, development, and 
+    maintenance of software
 Margaret Hamilton:
-    - She helped a lot in the involvement in apollo 11, she did exclusive testing which lead to a succesfull launch of apollo 11
+    - She helped a lot in the involvement in apollo 11, she did exclusive testing which lead to a succesfull 
+    launch of apollo 11
 Terminology: 
     - statements that define and quantify what the program needs todo
     - the work requirments isn't used in the same way as elsewhere
@@ -87,17 +100,23 @@ Local respository (repo):
         - git merge: merge a branch into a target branch, CP: Git merge
         - git checkout: switch to a branch, CP: Git checkout
     - These are local git commands where no internet is needed to use
-    - if I want to add a branch from my offline repo into the online/group repo than you would have to change into develope option and then merge the offline branch into the online branch
+    - if I want to add a branch from my offline repo into the online/group repo than you would have to change into 
+    develope option and then merge the offline branch into the online branch
 
 Git Hub:
     - git hub is a server that host copy of your repositories, it is just used to get remote repositories,
     - branch protection: don't push into master you should pull and push request into the master branch
-    - pull request is the same as merge that is only avalible on git hub, when you do a pull request you need to include what it is/*name of branch* --what it is
-    - it will not let you merge until a review is met and tests are passed, this is for group and reviews are done by our LAs
-    - Push: send your updated branch into your online repo, Pull: takes whats ever in your online repo and brings it to your local repo
+    - pull request is the same as merge that is only avalible on git hub, when you do a pull request you need 
+    to include what it is/*name of branch* --what it is
+    - it will not let you merge until a review is met and tests are passed, this is for group and reviews are 
+    done by our LAs
+    - Push: send your updated branch into your online repo, Pull: takes whats ever in your online repo and 
+    brings it to your local repo
     - A pull request is only a git hub feature only
-    - Work Flow: don't push to master, first you should push to feature branch and then to dev branch, master branch is the last branch that should be pushed to
-    - To go into master it need to pass travis and sonar with at least 95%, has to meet the definition of done, and it has to RUN!!
+    - Work Flow: don't push to master, first you should push to feature branch and then to dev branch, master 
+    branch is the last branch that should be pushed to
+    - To go into master it need to pass travis and sonar with at least 95%, has to meet the definition of done, 
+    and it has to RUN!!
 
 Graphs:
     - How to use graphs:- networks/network topologies
@@ -125,8 +144,10 @@ How we represent graphs: - List of linked lists
                         - Matrix of vertices:
                             - row and column titles are the vertices
                             - row-column indices are edge weights (or edge existance)
-                        - List vs matrix: - List: more common, usually easier to visialize/conceptualize, adding edges is slow, many algorithms are slow or very individualized
-                            - Matrix: most algorithms are extremely fast in comparison, searches and traversals very mathematical, adding vertices is slow
+                        - List vs matrix: - List: more common, usually easier to visialize/conceptualize, adding 
+                        edges is slow, many algorithms are slow or very individualized
+                            - Matrix: most algorithms are extremely fast in comparison, searches and traversals 
+                            very mathematical, adding vertices is slow
                         - Library: - nextwork X (http//networkx.github.io/)
                             - graphs, digraphs, multigraphs
                             - well tested (>90% coverage)
@@ -135,7 +156,8 @@ How we represent graphs: - List of linked lists
 ********************************************************************************
                                 June 12th
 What I did since last time:
-    -I went on networkX webcite and went over the network package, more psecificly how to set up graphs with nodes and edges and how networks would be set up usinf them
+    -I went on networkX webcite and went over the network package, more psecificly how to set up graphs with nodes 
+    and edges and how networks would be set up usinf them
     -I also continued reading 5 dysfunctions of a team, about half way done with the book
 
 What I will do for next time:
@@ -143,7 +165,8 @@ What I will do for next time:
     -I will also continues reading 5 dysfunctions, trying to finish that by the weekend
 
 Blockers:
-    -The API isnt out yet and because of that we aren't sure what we should start programming, hopefully the API will soon be released that way we are able to start working on things
+    -The API isnt out yet and because of that we aren't sure what we should start programming, hopefully the API 
+    will soon be released that way we are able to start working on things
 
 Python notes:
     -A dictionary is a key value term, python is a multiple dictionary 
@@ -151,7 +174,8 @@ Python notes:
     -example the key word is "GO"  and the value would be food, once the key matches the value then it does something
         * EX; {"go", food}
              -{"Move", food}
-    -When looking for a language look up why that language was made for, it will help you out a lot more and make everything a lot better. 
+    -When looking for a language look up why that language was made for, it will help you out a lot more and 
+    make everything a lot better. 
     -
 
 Non-functional requirement Examples
@@ -172,9 +196,12 @@ Analysis:
 
 Testing:
     -Acceptance; the customer saying this is what we asked for, when the requirments are met
-    -Unit: method; test driven programs, write a test first and then the functunality, if you cant test your code then how are you writting your code
-        -write just enough code for it to pass (TDD), write a test then write the code that passes that test, that you know what kind of code you are writting 
-    -intergration: class; this is when you test the whole class, once we know the method works we have to check and make sure the whole class works and passes the test
+    -Unit: method; test driven programs, write a test first and then the functunality, if you cant test your code 
+    then how are you writting your code
+        -write just enough code for it to pass (TDD), write a test then write the code that passes that test, 
+        that you know what kind of code you are writting 
+    -intergration: class; this is when you test the whole class, once we know the method works we have to 
+    check and make sure the whole class works and passes the test
     -system; 
 
 Unit Test:
@@ -199,7 +226,8 @@ Guidelline: style
 Guideline: naming
     -Use good descriptive names
     - Probably not hungarian notation
-        -crszkvc 30lastNameCol: a constant refrence argument, holding the contents of a database column LastName of type varchar(30) which is part of the tables primary key
+        -crszkvc 30lastNameCol: a constant refrence argument, holding the contents of a database column LastName 
+        of type varchar(30) which is part of the tables primary key
         -type checking now done by IDE and compiler   
 
 Guideline: test:
@@ -240,7 +268,8 @@ Agile:
 ********************************************************************************
                         June 13
 Since last time: 
-    -I started reading head first deign patters I also looked at command prompt designing on youtube, just getting prepared to start programming
+    -I started reading head first deign patters I also looked at command prompt designing on youtube, just 
+    getting prepared to start programming
 
 For next time: 
     -I will definitly look at Lukes files that he uploaded and get started on programming 
@@ -302,8 +331,10 @@ Agile Promises:
     -Deal with change 
 
 What really matters? when it comes to developing software
-    -"human interactions are complicated and never very crisp in their effects, but they matter more than any other aspect of the work." -DeMarco and Lister
-    -"Process and technology are a second-order effect on the outcome of a project. The first-order effect is the people" -Cockburn
+    -"human interactions are complicated and never very crisp in their effects, but they matter more than 
+    any other aspect of the work." -DeMarco and Lister
+    -"Process and technology are a second-order effect on the outcome of a project. The first-order effect 
+    is the people" -Cockburn
 
 What to do?
     -how do we manage the teams that are required to produce software?
@@ -318,7 +349,8 @@ What to do?
         -becomes cumbersome and slows progress
 
 Manifesto for Agile Software Development 
-    -we are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value:
+    -we are uncovering better ways of developing software by doing it and helping others do it. Through 
+    this work we have come to value:
         -indivuals and interactions over processes and tools 
         -Working software over comprehensive documentation
         -customer collaboration over contract negotitation
@@ -429,7 +461,8 @@ The observer Pattern:
     -defines a one to many dependency between objects so that when one object changes state, all 
 
     -The observer pattern is a software design pattern in which an object, called the subject, maintains a 
-    list of its dependents, called observers and notifies them automatically of any state changes, usually by calling one of their methods
+    list of its dependents, called observers and notifies them automatically of any state changes, usually by 
+    calling one of their methods
     -It is mainly used to implement distributed event handling systems, in "event driven" software 
     -the observer pattern is also a key part in the design
     -this is a behaviour pattern because it depends on the relationship when a state changes something else will change
@@ -531,15 +564,19 @@ dependency Injection:
     -A dependency is an object that can be used (a service)
     -An injection is the passing of a dependency to a dependent object (a client) that would use it 
     -The service is made part of the client's state 
-    -passing the service to the client, rather than allowing a client to build or find the service, is the fundamental requirement of the pattern 
-    -this fundamental requirement means that using values (services) produced within the class from new or static methods is prohibited
+    -passing the service to the client, rather than allowing a client to build or find the service, is the fundamental
+    requirement of the pattern 
+    -this fundamental requirement means that using values (services) produced within the class from new or static 
+    methods is prohibited
     -the client should accept values passed in from outside 
     -this allows the client to make acquiring dependencies someone else's problem
     -the intent behind dependency injection it to...
 Inversion of control:
-    -A design principle in which custom written portions of a computer program receive the flow of control from a generic framework 
+    -A design principle in which custom written portions of a computer program receive the flow of control from a 
+    generic framework 
     -a software architecture with this design inverts control as compared to traditional procedural programming 
-        -in traditional programming, the custom code that expresses the purpose of the program calls into reusable libraries to take care of generic tasks 
+        -in traditional programming, the custom code that expresses the purpose of the program calls into reusable 
+        libraries to take care of generic tasks 
         -With inversion of control, it is the framework that calls into the custom, or task-specific, code 
 Abstract factory pattern:
     -provides an interface for creating families of related or dependent objects 
@@ -604,7 +641,8 @@ Chapter 7:
     facade:
         -provides a unified interface to a set of interfaces in a subsytem 
         -facade defines a higher level interface that makes the subsystem easier to use 
-    *the maindifference between a facade and adapters is that facades have more things going on behind the curtons while adapters are pretty straight forword
+    *the maindifference between a facade and adapters is that facades have more things going on behind the curtons 
+    while adapters are pretty straight forword
     difference:
         -adapters alter and interface 
     Principle of least knowledge:
@@ -1010,6 +1048,149 @@ Some Typical:
 
     -if you cant say it in 2 complete sentences then you don't know it 
     -Molly Weller is incharge of COMPSCI for internship 
+
+********************************************************************************************
+                                July 10th 
+What I did since last time:
+    -continued trying to connect our cli to our map, as well as reworking our cli the way luke reccomeneded 
+
+What I will do:
+    -Meet with my group see where we need to be at and what I can do to help 
+
+Blockers:
+    -None 
+
+EFfective Java Book:            Chapter 2
+
+Consider static factory methods instead of Constructors
+    -One advantage is they have names 
+        -Constructors do not and one has to differentiate via parameters 
+        -This can be confusing and lead to errors 
+    -A class can have only one constructor with a given name 
+        -Don't change order of constructor parameters to differentiate 
+    -Static factory methods dont have to create a new object 
+        -Constructors always do 
+        -Maybe there's an object already created that works 
+        -Helps with immutable classes and pre-constructed instances 
+    -Singletons, flyweights, non-instantiable 
+    -Can return a subtype 
+        -java util.collections contain all static methods that work on many types 
+        -polymorphic 
+        -addAll, binarySearch, disjoint, frequency, min, max, sort, shuffle, reverse 
+        -type returned can be non-public 
+        -Can vary implementation 
+    -Returned class need not exist at the time the class is written 
+        -Allows run-time specification 
+        -JDBC an example 
+Service Provider framwork 
+    -Service interface 
+    -Provider registration 
+    -service access 
+    -Optinal service provider interface 
+        -factory to create service provider 
+Java 6
+    -General purpose java.util.ServiceLoader
+        -SO you don'thave to write your own interface 
+Consider Static Factory Methods Instead of Constructors 
+    -Disadvantages 
+        -classes without public or protected constructors cannot be sub-classed 
+        -not called out in Javadoc 
+    -Popular Java static factory names 
+        -valueOf, getinstance, newinstance, getType 
+Consider a builder when faced with many constructor parameters 
+    -If a class has many fields that need initializing 
+    -create empty instance and have many set()s 
+        -problem: instance in inconsistent state 
+    -builder pattern, pretty much a decorator 
+    -build() is parameters-less static mehod 
+    -required parameteres passed in to constructor 
+        -optionals set ()
+        -other languages have optional parameters instead 
+-Consider using builers they are much easier than constructors 
+
+Chapter 2 is park of the book that go inot detail about private and they do too into detail 
+-if we return an internal class it will also only be inplemented in the history class  
+-You might always want final inside your prarameters because thats what you most likely mean 
+-You can also create a private no-Arg constructor (private no argument)
+    -to prevent that create a private no paramenter constructor 
+
+Enforce NOn-instantiability with private constructor 
+    -just have a private no-args constructor 
+        -if have any no args constructors, the default
+
+********************************************************************************************
+                                        July 11th
+Since last time:
+    -I started working on test on our new CLI 
+For next time:
+    -I will continue writting test for our CLI 
+Blockers: 
+    -None 
+
+Perfer dependency Injection:
+    use a spell checker that also checks for multiple languages like england english, austrilia english etc. 
+    -helps preserve immutability 
+    -Works for constructors, factories, and builders 
+    -can pass factory into constructor
+        -Mosaic create (supplier < ? extends tile > titlefactory)
+    -Use DI framework 
+Avoid Creating Unnecessary Objects 
+    -Use literals and ValueOf()
+    -Anyhthing thta is immutable 
+    -Anything that is stateless 
+        -E.g.: adapters 
+    -Stack memory error 
+    *the main difference between java and C++  is that c++ supports multiple inheritance and oporator overload while java doesnt 
+    -IN java when you have a mempry leak happens all you really gotta do is just null the the array or 
+    what ever the garbage collection is trying to throw away. Nulling it make it reach xero a lot faster 
+So:
+    -try very hard to not manage memory 
+    -Nulling object refrences should be very unusual 
+Avoid Finalizers:
+    -Unpredictable, often dangerous, generally unnecessary 
+    -Unlike C++ destructions 
+        -these are called immediately 
+        -Java uses try/finally for these types of uses
+    -One never knows when a finalizer is called 
+        -part of garbage collection 
+        -Might not be called at all 
+    -Don't e.g. close files as there is a limited number of open files 
+    -Finalizers are slow 
+    -Finalizers are not chained 
+    -If really need funtionality 
+    -there are finalizer attacks 
+        -crrate final finalize method to protect 
+    -Implement AutoClosable 
+        -Have to have close method 
+        -Used with try-with-resources statements 
+
+                    // End of chapter in java book//
+
+                   //Chapter 3: methods common to all objects //
+    
+Obey the general contract when overriding equals:
+    -Sometimes, you dont need to
+        -When all object are unique, such as threads 
+        -when you don't need it, such as with random number generators 
+        -Superclass equals works well, such as sets, lists, and maps getting from AbstractList etc. 
+    
+When to implement:
+    -When logical equality (.equals) is different from simple object identity (==)
+    -This is the typical case as classes have state, kept by variables with values 
+    -Test for equivalence, not the smae object 
+    -When we need the class to be map keys or set elements 
+Must implement an Equivalence relation 
+    -Must be reflexive: x.equals(x) must return true 
+    -Must be symmitric 
+
+**Something to consider when using a .equals method in java 
+
+Non - Transitivie 
+    non-transitive 
+
+So:
+    -ther is no way to extend an instatiable class and add a value while preserving the equals contract 
+    -You can safely add values to a subclass of abstract class 
 
 
 
