@@ -1192,6 +1192,106 @@ So:
     -ther is no way to extend an instatiable class and add a value while preserving the equals contract 
     -You can safely add values to a subclass of abstract class 
 
+********************************************************************************************
+                                    July 15th
 
+What I did:
+    -Not as much as I wanted due to life but read java book 
+What I will do: 
+    -Work with my group and peer program 
+Blockers:   -none 
 
+Effective Jave Chapter 3 
 
+So?
+    -there is no way to extend an instantiable class and add a value while preserving the equals contract 
+    
+Consistency:
+    -Do not write an equals method that depends on unreliable resources 
+    -Java's URL equals relies on IP address comparison 
+        -What happens when not on network?
+        -WHat happens whennetwork adress change 
+Recipe: 
+    -Check for object == this
+    -Use instance of to check for correct type 
+    -Cast argument to correct type 
+    -Test == for all significant fields 
+        -Except for Float.compare, Double.compare, and Arrays.equal 
+    -Also override hashCode
+    -Use @override 
+Always override hashCode when you Override equals 
+    -When invoked on the same object, and the object hasn't changed to affect equals, always return the same integer 
+        -Does not have to be the same integer from runtime to runtime 
+    -If two objects are equals, both hashCode must be the same 
+    -if they are not equal, it is not required to product distint hashCode 
+        -if not, hash table performance can be affected 
+        -"return 42" is legal, but horrible 
+Creating a hashCode 
+    -set reults to 17
+    -For all the fields 
+        -if boolean, c = f ? 1 : 0
+        -if byte, char, short, or int, c = (int) f 
+        -if long, c = (int) (double.doubleToLongBits(f)) 
+        .
+        .
+        .
+    -Update result = 31 *result + c
+    -exclude and redundant fields 
+        -which you really shouldn't have anyway 
+    -Ignore any fields ignored by equals 
+Always override toString:
+    -makes class much more pleaseant to use 
+    -when practical, toString should return all intresting information in object 
+    -one has to choose the format returned 
+        -Good idea to create a constructor or static factory that takes string representation and creates object 
+    -Provide access to values in toString via getters 
+Override clone judiciouly:
+    -creates and returns a copy of an object 
+        -x.Clone
+More clones:
+    -no need to provide clone for immutavle objects instead, can provide copy constructor or factory 
+        -public foo (foo foo)
+        -public static Foo news=instance(foo fooo)
+    -interfaces should not extend cloneable 
+    -Classes designed for inheritance should not implement it 
+Consider implementing Comparable: 
+    -similar to equals 
+        -but provides ordering onformation 
+        -is generic 
+        - Useful in eg Arrays.sort()
+    -returns comparison between two objects
+        -1 if first less than 
+compareTo   
+    -x.comparae to(y) == -yComparTo(x07) 
+    -x.compareTo(y) > 0and ycompareto9z0 > 0
+
+Chapter 4: classes and interfaces (effective java)
+
+Minimize the accessibility of classes and members 
+    -The single most important factor that distinguishes a well-designed module from a poorly-designed one is 
+    the degree to which the module hides its internal data and other implementation details from other modeules" 
+    -make each class or member as inaccessible as possible 
+    -if used nowhere else, nest a class within the class that uses it
+    -try to avoid protected to: 
+        -must always support 
+        -exposes implementation detail to subclasses
+        -should be rare 
+    -if a method overrides a superclass method, it must have the same acess level 
+        -to not violate the liskov principle 
+    -implementing an interface requires all methods to be public 
+        -implicit in implementation an interface 
+    -istance field should never be publice 
+        -limits typing 
+        -limits invariants 
+        -are not thread-safe 
+    -Arrays are always mutable 
+        -Never have public static final array field 
+        -Or an accessor that returns such a beast 
+        -be careful of IDEs thta create accessors automatic 
+        -return a copy of an arry not the actual copy 
+In oublic classes, use accessor methods, not public fields:  
+    -book still insists on using lame exaples of sets instead of simply making fields public 
+        -wiith the ostensible argument that we can change internal representation 
+
+    
+ 
