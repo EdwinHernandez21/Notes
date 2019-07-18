@@ -1293,5 +1293,132 @@ In oublic classes, use accessor methods, not public fields:
     -book still insists on using lame exaples of sets instead of simply making fields public 
         -wiith the ostensible argument that we can change internal representation 
 
+********************************************************************************************
+                                    July 17th
+
+Since last time: 
+    -I worked on our object file, implementing a list that will allow us to pass item between the player and 
+    the rooms and having the ablility to use them 
+For next time: 
+    -I will continue working with my team on implementing the object file as well as reading effective java 
+Blcokers:   -None 
+
+Go home check router and make sure plug in play is off 
+try and set up a honey pot , python 
+
+In public classes, use Accessor Methods, not public fields 
+    -book still insists on using lame examples of sets instead of simply 
+
+Minimize mutability
+    -All information provided at construction 
+    -Any changes result in new objects 
+        -which in general true 
+    -Don't provide methods that modify an object's state 
+        -mutators 
+    -Ensure class connot be extened 
+        -Subclasses can't change intent 
+    -Make all fields final 
+    -make all fields private 
+    -Ensure that a client connot obtain refrences to mutable data 
+        -dont use client provided refrences 
+        -dont return direct object refrences 
+        -make defensive copies 
+    -Immutable objects are simple 
+        -Always the same behaviour 
+        -Never global data 
+    -Immutable objects are thread safe 
+        -implicitly parallelizable 
+        -no synchronization needed 
+    *for threading you might want to learn scala for threading and its the most in demand
+    -only possible downside is the need for an object for each value 
+        -but objects are in general cheap 
+        -are you sure it's inefficient? 
+    -Classes  should be immutable unless there is a very good reason to make them mutable 
+        -at the very least, from an external point of view 
+    -if cannot be immutable, limit mutability as much as possible 
+        -make every field final unless there is a competive reason not to 
+Favor composition over inheritance 
+    -GO4 
+    -Inheritance violates encapsulation 
+Compose Instead 
+    -an instrumentedHashSet has a hashSet instead of extending a HashSet 
+        -And extends a ForwardingSet class 
+    -Have methods forword tot he refrenced type 
+    -These are wrapperr classes 
+        -AKA decorator classes 
+Inheritance 
+    -is-a relationship 
+    -is every instance os a subclass really an instance of the superclass 
+        -if not, have a privite 
+design and documentat for inheritance
+    -the only way to test a class designed for inheritance is to write subclasses 
+    -constructors must not call over-ridable methods 
+        -directly or indirectly 
+        -A superclass constructor runs before 
+Perfer interfaces to abstract classes 
+    -classes force inheritance 
+        -java is single inheritance 
+    -excisting classes can be easily changed to implement interface
+    -interface are ideal for defining mixins 
+        -loosely a mixin is an additional type for a class 
+        -useful for polymorphism 
+        -know what methods are avalible to client, which in general define a type 
+    -can create skeletal implementation for each interface 
+        -generally call abstract interface (skeletal interface might be better)
+        -Abstract Collection, map, list, set 
+    -classes force inheritance
+        -java is single inheritance 
+    -abstract classes do permit multiple implementations 
+        -easier to evolve 
+        -if you want to add a method, can add 
+use interfaces only to define types 
+    -nuff said 
+
+Prefer class Hierarchies to tagged classes 
+    -Verbose, error-prone, and inefficient 
+    -limitation of a real class hierarchy 
+    -test the clearest code you can write and thens ee why your program is too slow 
+Use function objects to Represent straegies 
+    -Java didn't have methods 
+favot static member classes over non-static 
+    -A nested class is defined within another class 
+    -only serves the enclosing class 
+    -Four kinds 
+        -static 
+        -non-static 
+        -anonymous 
+        -local
+    -Last three are called inner class 
+Four static member classes over non-static 
+    -For example, in a linked list, nodes do not need to refer to head, tail, etc. from list class 
+    -no need for node to containn all the data in list, so it can 
+
+Anonymous classes 
+    -have no names 
+    -not a member of enclosing class 
+    -decleared 
+
+-In java you are able to place a class inside a method (reffered to as a local class)
+
+                            Chapter 5 (java book)
+Typing:
+    -java's type system is very complex
+    -It add various mechanisms to add "generics"
+    -Other languages simply have refrences to objects and duck typing 
+    -with generica the test typing can be done at complaining  time 
+Generic Types:
+    -Generic classes and interfaces are known as generic types 
+    -Generic have different sergs of p 
+    -The one thing thta cannot be changed in java is the equal (=) sign 
+Prefer List to Arrays:
+    -Arrays are covariant 
+        -if subs is a subtype of super, sub[] is a subtype of super[]
+    -Generics are invariant 
+        -list<t1> is never a subtype of list<t2>
+    
+    -you can create a objects array as long (object[] objectArray = new long[];
+                                            objectArray[0] = "food";)
+                                            
+    
     
  
