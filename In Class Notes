@@ -1419,6 +1419,86 @@ Prefer List to Arrays:
     -you can create a objects array as long (object[] objectArray = new long[];
                                             objectArray[0] = "food";)
                                             
-    
-    
- 
+********************************************************************************************
+                                    July 22th    
+
+Since last time:    -I worked with dan and lauren to set up our trello board and assigned everyone a task 
+For next time:  -I will go to our team meeting and catch up on the meeting that I wasn't able to attened 
+Blockers:   -None 
+Team Blockers:  -None 
+
+Prefer List to Arrays:
+    Arrays are covariant:
+        -If sub is a subtype of super, sub[] is a subtype of super 
+
+Arrays versus Generics:
+    Arrays are reified:
+        -their enviornment types are enforced at runtime 
+    Generics are implemented by type erasure 
+        -types enforced at compile time and erase type at run time 
+    Connot create 
+Bounded wildcards
+    -List<string> is not a subtype of List<object>
+    -However, every object 
+//wildcard type for a parameter that serves as an E producer 
+    public void pushAll(iterable<? extends E> src)
+    {for ( E e : src)
+        push(e):
+    }
+
+When to use: 
+-Use bounded wildcars in methods that have producer or consumer parameters
+    -Maybe not  agreat indea anyway 
+-Pecs: producer/Extends 
+
+                            Chapter 6
+                            Enums	and	Annotations
+Java enumeration
+-java's enumeration are more powerful than other languages 
+-almost classes    
+    -can texend, but can implement an inferface 
+-provide compile time type safty 
+-Can't pass or assign incorrectly 
+
+Enumerations
+-Dont count on ordinal values 
+-Use constructor instead 
+-Use enumsets instead of bit fields 
+
+Annotations
+-Perfer Annotations to Naming Patterns 
+    -JUnit a major example 
+-Consistently use @Override 
+    -Makes sure you are actually overriding 
+    -Especially for equals, toString, hashCode 
+
+Use maker interfaces to define types:
+-A maker interface is one with no methods
+-Serializable is an example 
+    -Indicates object can be written via ObjectOutputStream 
+
+
+Upon reflection:
+-In computer scienc, reflection is the ability of a computer program to examine, introspect
+and modify its own structure and behaviour at runtime 
+    -Early programs were self-modifying in order to loop 
+-reflection allows inspection of classes, interfaces, fields and methods at runtime 
+-java examples that use reflection: JUnit, Sprring, Struts, Hibernate 
+
+Java:
+-Information on
+    -classes and inheritance
+    -methods (and constructors)
+    -Fields 
+    -Modifiers 
+-Can call
+    -methods (and constructors)
+-can change fields and modifiers 
+-cant add/delete classes, fields, or methods 
+
+-reflection now excist 
+-it is very powerful
+-if you are writting a fame work you have to write reflection 
+-its a really bad idea you are changing the object right behind its back (their fields and method)
+
+
