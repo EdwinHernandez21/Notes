@@ -1501,4 +1501,63 @@ Java:
 -if you are writting a fame work you have to write reflection 
 -its a really bad idea you are changing the object right behind its back (their fields and method)
 
+********************************************************************************************
+                                    July 24th
+
+ Since last time:    -I worked with Dan and Casey on reworking our new game engine 
+    -Had a meeting with Dan to talk about our trello board 
+ For next time:  -I will work with Dan and Lauren to break down our trello cards so that everyone 
+                 has an individual task 
+ Blockers:   -None 
+ Team Blcokers:  -Some people are stuck and don't know what to do because the trello cards are to simple 
+
+Chapter 7: Methods
+
+Check parameters for validity: 
+    - Most parameters have restrictions on their validity 
+        - Positive, non-null, not zero-length, etc
+    - Aka preconditions 
+    - Program defensively 
+    - Catch problems as soon as possible 
+    - fail fast 
+    - We want to stop all errors as soon as possible 
+    - Method may 
+        -or worse, work but in an expected way 
+    - Throws an exception 
+        -an IllegalArgumentException a good choice 
+Assertions:
+    - Optional in java 
+        - Must enable with -ea
+        - Or in first class (and doesn't enable then there):
+        static {
+            ClassLoader.getSystemClassLoader().
+             setDefaultAssertionStatus(true);
+        }
+        - this will now turn on assertion because java doesn't turn them on automatically
+Checking prarameters for validity 
+    - Important for maintainingobject consistency 
+        - Values staored for later use must be good 
+        - Checks in constructors 
+
+Make defensive copy 
+    - They will modify your invarients 
+Design method signatures carefully 
+    - Good nams 
+    - Short parameters list 
+        -if all identical, maybe use varargs 
+Short parameter  list 
+    - Maybe pass a class that encapsulates multiple prarameters
+    - Matbe use the builder pattern 
+    - Perfer interfaces for paramerations 
+    - Avoid booleans, favor enumerations 
+Use Overloading Judiciously 
+    - Overloading happens at compile time 
+    - Here, there was an array of Collection<?>
+    - Overloading 
+    -Cognitive overload, set.remove revmoes the value while list.removes removes the item at the specific location 
+    -Dont return nulls
+Write good javaDoc documentation 
+    - for all your visible items 
+    
+
 
