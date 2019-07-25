@@ -6,3 +6,4 @@ Creating a graph:
     import networkx as nx
     G = nx.Graph()
 
+**Never Mind we are not using NetworkX** 

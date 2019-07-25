@@ -1559,5 +1559,127 @@ Use Overloading Judiciously
 Write good javaDoc documentation 
     - for all your visible items 
     
+********************************************************************************************
+                                    July 25th
+
+Chapter 7: Lambdas and Streams 
+
+Perfer Lambdas to Anonymous Classes :
+    - For example strategy patterns 
+    - Used to use anonymous classes 
+    - Java 8 
+    
+    Lambda example:
+        Collections.sort(words, (s1, s2) --> Integer.compare(s1.length(), s2.length()));
+        //This is also known as an anonymous function 
+
+    Method Refrence:
+        Collections.sort(words, comparingInt(String:: length));
+        //If you are able to use a refrence method use that instead of lambda
+
+    Functional Constructor:
+        words.sort(comparingInt(String::length));
+        //Words is its  own sorting method 
+Types of lambda:
+    - Static 
+    - Bound
+        - receiving object specified in method refrence 
+    - Unbound 
+        - receiving object specified 
+    
+Static:
+    srt -> Integer.parseInt(str)
+    Integer::parse
+Bound: 
+    Instance then = instant.now();
+     t -> then.isAfter(t)
+    Instant.now()::isAfter 
+Unbound:
+    str -> str.toLowerCase()
+    String::toLowerCase
+New Object:
+    () -> new TreeMap < K, V > 
+    TreeMap 
+
+Favor the use of standard Functional Interfaces:
+    - 43 total 
+    - 5 basic types; 
+     - operator: 
+         -Results are arguments the same type 
+     - Predicate: 
+         -Returns a boolean 
+     - Function: 
+         -Arguments and return types differ 
+     - Supplier: 
+         -Takes no arguments but returns a value 
+     - Consumer: 
+         -Takes arguments but returns nothing 
+Predicate: 
+    predicate<string> isALongWord = t.length() > 10;
+    system.out.println(isALongWord.test("successfully"));
+    //true 
+Supplier:
+    IntSTream.range(0, 10).forEach(System.out::println);
+    /*
+    0
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    */
+Parallel: 
+    IntSTream.range(0, 10).parallel().forEach(System.out::println);
+    //Parallel is better when the data doesn't ned to be in ordder 
+    /*
+    1
+    2
+    0
+    4
+    3
+    8
+    9
+    7
+    6
+    5
+    */
+Supplier/Generator:
+    IntStream.iterate(0, i -> i + 2)
+        .limit(3)
+        .forEach(Sytem.out::println);
+    /*2
+    1
+    9
+    */
+Favor the use of Standard Functional Interfaces: 
+    - UnaryOperator - T apply (T t)
+        - String::toLowerCase
+    - Function - R apply (T t)
+        - Arrays::asList
+    - Supplier - T get ()
+        - Instant::now
+    - Consumer - void accept (T t)
+        - system.out::println
+Use Streams Judiciously 
+    - Stream - sequence of data elements 
+    - Pipline - multistage computation on elements 
+    - Source, intermediate operations, termianal operation 
+    - Excuted lazily 
+    - Fluent - chained into a single statement 
+    - Sequential by default
+        -Can add . parallel
+    - Best for transforming, filtering, combining, accumulating, searching a series of data 
+
+Use Caution when Making Stream Parallel 
+    - Doesn't work well with Stream.iterate or .limit 
+    - Does work well with ArrayList, HashMap, HashSet, arrays, int and long ranges 
+    - Best if terminal operation is a reduction 
+    -Lambda and refrence methods are also known as first class method and can be used to make your code a lot smaller
+
+    
 
 
