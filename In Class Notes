@@ -1680,6 +1680,65 @@ Use Caution when Making Stream Parallel
     - Best if terminal operation is a reduction 
     -Lambda and refrence methods are also known as first class method and can be used to make your code a lot smaller
 
-    
+********************************************************************************************
+                                    July 29th    
 
+                            Chapter 10: Exceptions 
+Use Exceptions only for exceptional conditions:
+    -A well-designed API must not force its clients to use exceptions for ordinary control flow 
+Use checked exceptions for recoverable conditions:
+    -three kinds of throwables:
+        -checked exceptions 
+        -runtime exceptions 
+        -errors 
+    -checked exceptions require client to catch or propogate 
+Runtime exceptions and errors: 
+    -Mostly for precondition violations
+    -Use runtime exceptions for programming errors 
+        -ArrayIndexOutOfBoundsException 
+    -Errors for JVM issues 
+        -E.g.: resource defliciencies 
+    -Don't subclass error 
+    -Don't throw any except AssertionError
+Avoid unnecessary use of checked exceptions
+    -Create state-testing methods 
+        -But beware of threading "check and act" race conditions 
+Favor the use of standard exceptions 
+    -E.g.: IllegalArgumentException 
+Throw exceptions appropriate to the abstraction: 
+    -Catch lower-level exceptions and throw more appropriate exception 
+Document all exceptions thrown by each method: 
+    -Declare all checked exceptions individually 
+    -Document precisely the conditions one os thrown 
+    -Use @throws for checked, but not for unchecked 
+Include failure-capture information in detail messages: 
+    -Include the values of all parameters and fields that contributed to the exception:
+        -Don't include sensitive information as it may up end up in logs, backups, etc.
+Strive for failure atomicity: 
+    -Failed method should leave the object in the state it was prior to the invocation 
+    -check before using parameters 
+Don't ignore exceptions:
+    -Don't have empty catch blocks 
+    -if you do, comment 
+
+Introduction: 
+    -very useful for matching patterns in text etc.
+    -Also widely used, sometimes in a limited form, for matching filenames 
+        -"Globbing"
+    -Some people when confirmed with a problem, think "I know I'll 
+
+Using the re.search funciton that will return the number of time something was matched
+-These are all ranges: {}, +, *
+-These are all anchors: ^, $
+-if we put a carrot at the beggining it means not 
+This is how you would search for groups 
+re.search('(.)(.)>\2\2', 'aabcc'
+
+Web crawlers:
+    -WGET 
+    -CURL 
+Replicant:
+    -A Replicant is a fictional bio 
+REplican:  
+    -REplican is a powerful web replicator based on regular expressions 
 
