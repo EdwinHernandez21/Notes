@@ -1,0 +1,183 @@
+1 Prefix
+2 Creating and Destroying Objects
+Item 1: Consider static factory methods instead of constructors
+Item 2: Consider a builder when faced with many constructor parameters
+Item 3: Enforce the singleton property with a private constructor or an enum type
+Item 4: Enforce noninstantiability with a private constructor
+Item 5: Perfer dependecy injection to hardwiring resources
+Item 6: Avoid creating unnecessary objects
+Item 7: Eliminate obsolete object references
+Item 8: Avoid finalizers and cleaners
+Item 9: Prefer try-with-resources to try-finally
+3 Methods Common to All Objects
+Item 10: Obey the general contract when overriding equals
+Item 11: Always override hashCode when you override equals
+Item 12: Always override toString
+Item 13: Override clone judiciously
+Item 14: Consider implementing Comparable
+4 Classes and Interfaces
+Item 15: Minimize the accessibility of classes and members
+Item 16: In public classes, use accessor methods, not public fields
+Item 17: Minimize mutability
+Item 18: Favor composition over inheritance
+Item 19: Design and document for inheritance or else prohibit it
+Item 20: Prefer interfaces to abstract classes
+Item 21: Design interfaces for posterity
+Item 22: Use interfaces only to define types
+Item 23: Prefer class hierarchies to tagged classes
+Item 24: Favor static member classes over nonstatic
+Item 25: Limit source files to a single top-level class
+5 Generics
+Item 26: Don't use raw types
+Item 27: Eliminate unchecked warnings
+Item 28: Prefer lists to arrays
+Item 29: Favor generic types
+Item 30: Favor generic methods
+Item 31: Use bounded wildcards to increase API flexibility
+Item 32: Combine generics and varargs judiciously
+Item 33: Consider typesafe heterogeneous containers
+6 Enums and Annotations
+Item 34: Use enums instead of int constants
+Item 35: Use instance fields instead of ordinals
+Item 36: Use EnumSet instead of bit fields
+Item 37: Use EnumMap instead of ordinal indexing
+Item 38: Emulate extensible enums with interfaces
+Item 39: Prefer annotations to naming patterns
+Item 40: Consistently use the Override annotation
+Item 41: Use marker interfaces to define types
+7 Lambdas and Streams
+Item 42: Prefer lambdas to anonymous classes
+Item 43: Prefer method references to lambdas
+Item 44: Favor the use of standard functional interfaces
+Item 45: Use streams judiciously
+Item 46: Prefer side-effect-free functions in streams
+Item 47: Prefer Collection to Stream as a return type
+Item 48: Use caution when making streams parallel
+8 Methods
+Item 49: Check parameters for validity
+Item 50: Make defensive copies when needed
+Item 51: Design method signatures carefully
+Item 52: Use overloading judiciously
+Item 53: Use varargs judiciously
+Item 54: Return empty collections or arrays, not nulls
+Item 55: Return optionals judiciouslly
+Item 56: Write doc comments for all exposed API elements
+9 General Programming
+Item 57: Minimize the scope of local variables
+Item 58: Prefer for-each loops to traditional for loops
+Item 59: Know and use the libraries
+Item 60: Avoid float and double if exact answsers are required
+Item 61: Prefer primitive types to boxed primitives
+Item 62: Avoid strings where other types are more appropriate
+Item 63: Beware the performance of string concatenation
+Item 64: Refer to objects by their interfaces
+Item 65: Prefer interfaces to reflection
+Item 66: Use native methods judiciously
+Item 67: Optimize judiciously
+Item 68: Adhere to generally accepted naming conventions
+10 Exceptions
+Item 69: Use exceptins only for exceptional conditions
+Item 70: Use checked exceptions for recoverable conditions and runtime exceptions for programming errors
+Item 71: Avoid unnecessary use of checked exceptions
+Item 72: Favor the use of standard exceptions
+Item 73: Throw exceptions appropriate to the abstractions
+Item 74: Document all exceptins thrown by each method
+Item 75: Include failure-capture information indetail messages
+Item 76: Strive for failure atomicity
+Item 77: Don't ignore exceptions
+
+Item 1 : Static factory methods
+Pros:
+    - They have a name
+    You can use them to control the number of instance (Example : Boolean.valueOf)
+    You can return a subtype of the return class
+Cons:
+    - You can't subclass a class without public or protected constructor
+    It can be hard to find the static factory method for a new user of the API
+Item 2 : Builder
+    -Builder are interesting when your constructor may need many arguments
+    -It's easier to read and write
+    -Your class can be immutable (Instead of using a java bean)
+    -You can prevent inconsistent state of you object
+Item 3 : Think of Enum to implement the Singleton pattern
+    public enum Elvis(){
+	    INSTANCE;
+	    ...
+	    public void singASong(){...}
+    }
+Item 4 : Utility class should have a private constructor
+    - A utility class with only static methods will never be instantiated. 
+    Make sure it's the case with a private constructor to prevent the construction of a useless object
+Item 5 : Dependency Injection
+    -A common mistake is the use of a singleton or a static utility class for a class that depends on 
+     underlying ressources. The use of dependency injection gives us more flexibility, testability and reusability
+Item 6 : Avoid creating unnecessary objects
+    - When possible use the static factory method instead of constructor (Example : Boolean) Be vigilant on autoboxing. 
+     The use of the primitive and his boxed primitive type can be harmful. Most of the time use primitives
+Item 7 : Eliminate obsolete object references
+    Memory leaks can happen in :
+    - A class that managed its own memory
+    - Caching objects
+    - The use of listeners and callback
+In those three cases the programmer needs to think about nulling object references that are known to be obsolete
+Item 8 : Avoid finalizers and cleaners
+    - Finalizers and cleaners are not guaranteed to be executed. It depends on the garbage collector and it can be
+     executed long after the object is not referenced anymore. If you need to let go of resources,
+     think about implementing the AutoCloseable interface.
+Item 9 : Try with resources
+    - When using try-finally blocks exceptions can occur in both the try and finally block. It results in non clear
+     stacktraces. Always use try with resources instead of try-finally. It's clearer and the exceptions that can
+     occured will be clearer.
+Item 10 : equals
+    -The equals method needs to be overriden when the class has a notion of logical equality.
+    This is generally the case for value classes.
+    -The equals method must be :
+        - Reflexive (x = x)
+        - Symmetric (x = y => y = x)
+        - Transitive (x = y and y = z => x = z)
+        - Consistent
+        - For non null x, x.equals(null) should return false
+    -Not respecting those rules will have impact on the use of List, Set or Map
+Item 11 : hashCode
+    -The hashCode method needs to be overriden if the equals method is overriden.
+    -Here is the contract of the hashCode method :
+        -hashCode needs to be consistent
+        -if a.equals(b) is true then a.hashCode() == b.hashCode()
+        -if a.equals(b) is false then a.hashCode() doesn't have to be different of b.hashCode()
+    -If you don't respect this contract, HashMap or HashSet will behave erratically
+Item 12 : toString
+    - Override toString in every instantiable classes unless a superclass already did it. Most of the
+     time it helps when debugging. It needs to be a full representation of the object and every informations
+     contained in the toString representation should be accessible in some other way in order to avoid
+     programmers to parse the String representation
+Item 13 : clone
+    - When you implement Cloneable, you should also override clone with a public method whose return
+     type is the class itself. This method should start by calling super.clone and then also clone
+     all the mutable objects of your class.
+    - Also, when you need to provide a way to copy classes, you can think first of copy constructor
+     or copy factory except for arrays.
+Item 14 : Implementing Comparable
+    - If you have a value class with an obvious natural ordering, you should implement Comparable.
+    - Here is the contract of the compareTo method :
+        - signum(x.compareTo(y)) == -signum(y.compareTo(x))
+        - x.compareTo(y) > 0 && y.compareTo(z) > 0 => x.compareTo(z) > 0
+        - x.compareTo(y) == 0 => signum(x.compareTo(z)) == signum(y.compareTo(z))
+    -It's also recommended that (x.compareTo(y) == 0) == x.equals(y). If it's not, it has
+     to be documented that the natural ordering of this class is inconsistent with equals.
+Item 15 : Accessibility
+    - Make accessibility as low as possible. Work on a public API that you want to
+    expose and try not to give access to implementation details.
+Item 16 : Accessor methods
+    - Public classes should never expose its fields. Doing this will prevent you to
+    change its representation in the future. Package private or private nested classes, can,
+    on the contrary, expose their fields since it won't be part of the API
+Item 17 : Immutability
+    - To create an immutable class :
+        -Don't provide methods that modify the visible object's state
+        -Ensure that the class can't be extended
+        -Make all fields final
+        -Make all fields private
+        -Don't give access to a reference of a mutable object that is a field of your class
+    - As a rule of thumb, try to limit mutability.
+
+
